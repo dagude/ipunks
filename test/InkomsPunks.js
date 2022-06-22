@@ -20,6 +20,7 @@ describe("Inkoms Punks Contract", () => {
 
       const returnedMaxSupply = await deployed.maxSupply();
       expect(maxSupply).to.equal(returnedMaxSupply);
+
     });
   });
 
@@ -44,7 +45,7 @@ describe("Inkoms Punks Contract", () => {
 
       // Assert the last minting
       await expect(deployed.mint()).to.be.revertedWith(
-        "No InkomsPunks left :("
+        "No Inkoms Punks left :("
       );
     });
   });
